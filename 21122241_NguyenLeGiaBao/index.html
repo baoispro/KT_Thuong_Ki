@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="assets/themify-icons/themify-icons.css" rel="stylesheet">
     <style>
-        .bold{
+        .bold {
             font-weight: bold;
         }
+
         #wrapper {
             display: flex;
             flex-direction: column;
@@ -128,7 +130,7 @@
             align-items: center;
         }
 
-        #select{
+        #select {
             background-color: black;
             color: #fff;
             height: 35px;
@@ -136,35 +138,46 @@
             border-radius: 3px;
         }
 
-        #receive{
+        #receive {
             width: 30%;
         }
 
-        #container_input{
+        #container_input {
             display: flex;
             margin-bottom: 16px;
         }
 
-        #txtEmail{
+        #txtEmail {
             background-color: black;
             color: #fff;
-            border: 1px solid #fff;
+            border: 1px groove #fff;
             border-right: white solid 1px;
             border-radius: 5px;
             border-top-right-radius: 0;
             border-bottom-right-radius: 0;
-            width: 56%;
+            width: 87%;
             height: 46px;
+            padding-left: 12%;
+            z-index: 2;
+            position: absolute;
         }
 
-        #subscribe{
-            height: 50px;
+        label {
+            position: absolute;
+            top: 19px;
+            left: 10px;
+            z-index: 3;
+        }
+
+        #subscribe {
+            height: 49px;
+            border: #fff solid 1px;
             border-radius: 5px;
             border-top-left-radius: 0;
             border-bottom-left-radius: 0;
         }
 
-        span{
+        span {
             display: inline-block;
             font-size: 8px;
             translate: 0 -2px;
@@ -211,7 +224,7 @@
             </div>
             <div id="line_item">
                 <div class="box_item">
-                    <div><img src="images/Image 1 (1).png" alt=""></div>
+                    <div><img src="images/Image 1 (1).png" alt="cosmetic" style="height: 100%;"></div>
                     <div class="left">
                         <div class="paragraph">
                             <h2>promotion title</h2>
@@ -232,7 +245,7 @@
                             <button>Shop now</button>
                         </div>
                     </div>
-                    <div><img src="images/Image 1 (2).png" alt=""></div>
+                    <div><img src="images/Image 1 (2).png" alt="lemon" style="height: 100%;"></div>
                 </div>
                 <div class="box_item_last">
                     <div><img src="images/Image 1 (1).png" alt="" style="opacity: 0;"></div>
@@ -256,9 +269,9 @@
                     <p>Our story</p>
                     <p>Blogs</p>
                     <div><select name="select" id="select">
-                        <option value="English">English</option>
-                        <option value="Vn">Vietnamese</option>
-                    </select></div>
+                            <option value="English">English</option>
+                            <option value="Vn">Vietnamese</option>
+                        </select></div>
                 </div>
                 <div id="Help">
                     <h3>Help</h3>
@@ -278,19 +291,26 @@
                 <h3>Receive new promotions</h3>
                 <p>Duis ea tempor commodo amet rephehende</p>
                 <div id="container_input" style="display: flex;">
-                    <input type="email" name="txtEmail" id="txtEmail" placeholder="Input your email">
+                    <div style="position: relative; z-index: 1; width: 100%;">
+                        <input type="email" name="txtEmail" id="txtEmail" class="ti-email"
+                            placeholder="Input your email">
+                        <label for="txtEmail" class="ti-email"></label>
+
+                    </div>
                     <button id="subscribe">Subscribe</button>
                 </div>
                 <div>
-                    <img src="images/Twitter 1.png" alt="">
-                    <img src="images/Facebook 1.png" alt="">
-                    <img src="images/LinkedIn 1.png" alt="">
-                    <img src="images/YouTube 1.png" alt="">
+                    <img src="images/Twitter 1.png" alt="Twitter">
+                    <img src="images/Facebook 1.png" alt="Facebook">
+                    <img src="images/LinkedIn 1.png" alt="LinkeIn">
+                    <img src="images/YouTube 1.png" alt="Youtube">
                 </div>
-                <p style="text-align: center;">&copy; 2022 Brand, Inc  <span>&#9679;</span> Privacy <span>&#9679;</span> Terms <span>&#9679;</span> Sitemap</p>
+                <p style="text-align: center;">&copy; 2022 Brand, Inc <span>&#9679;</span> Privacy <span>&#9679;</span>
+                    Terms <span>&#9679;</span> Sitemap</p>
             </div>
         </div>
     </div>
 </body>
 
 </html>
+<!-- Nguyễn Lê Gia Bảo,21122241 -->
