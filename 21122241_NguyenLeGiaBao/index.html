@@ -25,7 +25,7 @@
 
         #menu {
             display: flex;
-            width: 100%;
+            width: 88%;
             justify-content: center;
             margin-top: 20px;
         }
@@ -33,7 +33,7 @@
         #left_menu {
             display: flex;
             justify-content: space-evenly;
-            width: 25%;
+            width: 27%;
             color: gray;
             font-weight: bold;
         }
@@ -47,15 +47,29 @@
         #right_menu {
             display: flex;
             justify-content: space-evenly;
-            width: 25%;
+            width: 27%;
+        }
+
+        form {
+            position: relative;
+            border-radius: 5px;
+            width: 53%;
+            border: gray solid 1px;
+            height: 34px;
         }
 
         #search {
-            width: 218px;
-            height: 38px;
-            border: gray thick 5px;
-            border-radius: 5px;
+            width: 90%;
+            height: 30px;
+            border: none;
+            position: absolute;
+            padding-left: 21px;
+            outline: none;
+            left: 4px;
+            top: 2px;
         }
+
+
 
         #banner {
             display: flex;
@@ -164,7 +178,7 @@
 
         label {
             position: absolute;
-            top: 19px;
+            top: 18px;
             left: 10px;
             z-index: 3;
         }
@@ -183,6 +197,16 @@
             translate: 0 -2px;
         }
 
+        #btnSearch {
+            background-color: white;
+            color: black;
+            position: absolute;
+            z-index: 3;
+            top: 10px;
+            left: 0px;
+            width: 4%;
+        }
+
         @media screen and (min-width: 1920px) and (min-height:1152px) {
             button {
                 color: #fff;
@@ -191,6 +215,10 @@
                 border-radius: 3px;
                 width: 33%;
                 height: 15%;
+            }
+
+            #menu{
+                width: 77%;
             }
         }
     </style>
@@ -212,9 +240,10 @@
                     </div>
                 </div>
                 <div id="right_menu">
-                    <div>
+                    <form>
+                        <button id="btnSearch"><i class="ti-search"></i></button>
                         <input type="search" placeholder="Search product..." name="txtSearch" id="search">
-                    </div>
+                    </form>
                     <div><img src="images/Button 1.png" alt="Button"></div>
                     <div><img src="images/Avatar 1.png" alt="Avatar"></div>
                 </div>
