@@ -11,47 +11,47 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         #header {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-        
+
         #menu {
             display: flex;
             width: 100%;
             justify-content: center;
             margin-top: 20px;
         }
-        
+
         #left_menu {
             display: flex;
             justify-content: space-evenly;
-            width: 20%;
+            width: 25%;
             color: gray;
             font-weight: bold;
         }
-        
+
         #logo {
             display: flex;
             justify-content: space-around;
             width: 40%;
         }
-        
+
         #right_menu {
             display: flex;
             justify-content: space-evenly;
-            width: 20%;
+            width: 25%;
         }
-        
+
         #search {
             width: 218px;
             height: 38px;
             border: gray thick 5px;
             border-radius: 5px;
         }
-        
+
         #banner {
             display: flex;
             height: 225px;
@@ -59,27 +59,76 @@
             width: 100%;
             align-items: center;
         }
-        
+
         #title {
             font-size: 58px;
         }
-        
-        #lineitem {
+
+        #line_item {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
-        
+
         .box_item {
             display: flex;
-            width: 1274px;
-            height: 329px;
+            width: 81%;
+            height: 43%;
             border: lightgray solid 1px;
             border-radius: 10px;
             margin-bottom: 60px;
         }
-        
+
+        .box_item_last {
+            background: url(images/Image3.png) no-repeat;
+            background-size: 100%;
+            display: flex;
+            width: 81%;
+            height: 43%;
+            border: lightgray solid 1px;
+            border-radius: 10px;
+            margin-bottom: 60px;
+        }
+
+        .left {
+            display: flex;
+            justify-content: center;
+        }
+
+        .paragraph {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 80%;
+        }
+
+        .sub_paragraph {
+            color: gray;
+            font-style: italic;
+        }
+
+        button {
+            color: #fff;
+            background-color: #459d7a;
+            border: none;
+            border-radius: 3px;
+            width: 45%;
+            height: 15%;
+        }
+
         #footer {
             background-color: black;
+        }
+
+        @media screen and (min-width: 1920px) and (min-height:1152px) {
+            button {
+                color: #fff;
+                background-color: #459d7a;
+                border: none;
+                border-radius: 3px;
+                width: 33%;
+                height: 15%;
+            }
         }
     </style>
 </head>
@@ -112,30 +161,38 @@
             </div>
             <div id="line_item">
                 <div class="box_item">
-                    <div class="img"><img src="images/Image 1 (1).png" alt=""></div>
-                    <div class="paragraph">
-                        <h2>promotion title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo eum doloremque expedita repellat consequatur necessitatibus magnam? Ipsa, quidem recusandae.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <button>Shop now</button>
+                    <div><img src="images/Image 1 (1).png" alt=""></div>
+                    <div class="left">
+                        <div class="paragraph">
+                            <h2>promotion title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo eum doloremque expedita
+                                repellat consequatur necessitatibus magnam? Ipsa, quidem recusandae.</p>
+                            <p class="sub_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <button>Shop now</button>
+                        </div>
                     </div>
                 </div>
                 <div class="box_item">
-                    <div class="img"><img src="images/Image 1 (1).png" alt=""></div>
-                    <div class="paragraph">
-                        <h2>promotion title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo eum doloremque expedita repellat consequatur necessitatibus magnam? Ipsa, quidem recusandae.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <button>Shop now</button>
+                    <div class="left">
+                        <div class="paragraph">
+                            <h2>promotion title</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo eum doloremque expedita
+                                repellat consequatur necessitatibus magnam? Ipsa, quidem recusandae.</p>
+                            <p class="sub_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                            <button>Shop now</button>
+                        </div>
                     </div>
+                    <div><img src="images/Image 1 (2).png" alt=""></div>
                 </div>
-                <div class="box_item">
-                    <div class="img"><img src="images/Image 1 (1).png" alt=""></div>
-                    <div class="paragraph">
-                        <h2>promotion title</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nemo eum doloremque expedita repellat consequatur necessitatibus magnam? Ipsa, quidem recusandae.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                        <button>Shop now</button>
+                <div class="box_item_last">
+                    <div><img src="images/Image 1 (1).png" alt="" style="opacity: 0;"></div>
+                    <div class="left">
+                        <div class="paragraph" style="height: 100%; justify-content: center;">
+                            <h1>Gift for your skin</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sequi aperiam
+                                dolores necessitatibus?</p>
+                            <button>Shop now</button>
+                        </div>
                     </div>
                 </div>
             </div>
